@@ -302,15 +302,31 @@
                                     <span class="sidenav-normal"> @lang('main.rova_products') </span>
                                 </a>
                             </li>
-                            {{-- @can('add partner') --}}
+                            @can('add rovareview')
                                 <li class="nav-item ">
                                     <a class="nav-link {{ request()->routeIs('admin.rova.create') ? 'active collapsed' : '' }}"
                                         href="{{ route('admin.rova-products.create') }}">
                                         <span class="sidenav-mini-icon"> @lang('main.new') </span>
-                                        <span class="sidenav-normal"> @lang('main.rova_product') </span>
+                                        <span class="sidenav-normal"> @lang('main.new') @lang('main.rova_product') </span>
                                     </a>
                                 </li>
-                            {{-- @endcan --}}
+                            @endcan
+                              <li class="nav-item ">
+                                <a class="nav-link {{ request()->routeIs('admin.rova.index') ? 'active collapsed' : '' }}"
+                                    href="{{ route('admin.rova-reviews.index') }}">
+                                    <span class="sidenav-mini-icon"> @lang('main.all') </span>
+                                    <span class="sidenav-normal"> @lang('main.rova_reviews') </span>
+                                </a>
+                            </li>
+                            @can('add rovareview')
+                                <li class="nav-item ">
+                                    <a class="nav-link {{ request()->routeIs('admin.rova.create') ? 'active collapsed' : '' }}"
+                                        href="{{ route('admin.rova-reviews.create') }}">
+                                        <span class="sidenav-mini-icon"> @lang('main.new') </span>
+                                        <span class="sidenav-normal"> @lang('main.new') @lang('main.rova_review') </span>
+                                    </a>
+                                </li>
+                            @endcan
                         </ul>
                     </div>
                 </li>

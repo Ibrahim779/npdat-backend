@@ -360,4 +360,8 @@ return [
 
     'updated' => 'Updated Successfully',
     'copyright' => 'Copyright',
+
+    'comment' => 'Comment',
+    'comment_en' => 'Comment EN',
+    'comment_ar' => 'Comment AR',
 ];

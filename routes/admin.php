@@ -24,6 +24,8 @@ use App\Http\Controllers\Admin\Pages\HomeController;
 use App\Http\Controllers\Admin\Pages\AboutController;
 use App\Http\Controllers\Admin\Pages\NpdatController;
 use App\Http\Controllers\Admin\RovaProductController;
+use App\Http\Controllers\Admin\RovaReviewController;
+use App\Models\RovaReview;
 
 Route::middleware('guest:admin')->group(function () {
 
@@ -122,7 +124,9 @@ Route::middleware('auth:admin')->group(function () {
 
    Route::resource('weOffers', WeOfferController::class)->except('show');
 
-   Route::resource('rova-products',RovaProductController::class)->except('show');
+   Route::resource(
+   'rova-products', RovaProductController::class)->except('show');
+   Route::resource('rova-reviews',RovaReviewController::class)->except('show');
 
    Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 });

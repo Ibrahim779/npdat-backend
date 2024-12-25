@@ -25,8 +25,8 @@ class RovaReviewRequest extends FormRequest
     public function rules()
     {
         return [
-            'image' => ['mimes:jpeg,jpg,png|max:5000', Rule::requiredIf($this->method() == 'POST')],
-            'name.*' => 'required|string|min:3|max:50',
+            'image' => ['mimes:jpeg,jpg,png', Rule::requiredIf($this->method() == 'POST')],
+            'comment.*' => 'required|string|min:3|max:50',
         ];
     }
 }

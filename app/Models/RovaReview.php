@@ -13,12 +13,12 @@ class RovaReview extends Model
 
     protected $guarded = ['id'];
     
-    public $translatable = ['name'];
+    public $translatable = ['comment'];
 
     public function setImageAttribute($image)
     {
         if ($image) {
-            $this->attributes['image'] = FileUpload::make($image)->store('partners');
+            $this->attributes['image'] = FileUpload::make($image)->store('rova-reviews');
         }
     }
     public function getImgAttribute()

@@ -260,6 +260,10 @@ return [
     'global' => 'عام',
     'investor' => 'مُستثمر',
     'company' => 'شركة',
+    'comment_en' => 'التعليق بالانجليزية',
+    'comment_ar' => 'التعليق بالعربية',
+    "comment" => "التعليق",
+    
 
     //Models 
     'admin' => 'المديرون',

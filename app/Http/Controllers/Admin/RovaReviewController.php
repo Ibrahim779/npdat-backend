@@ -11,7 +11,7 @@ class RovaReviewController extends Controller
 {
     public function index()
     {
-        $this->authorize('viewAny', RovaReview::class);
+        // $this->authorize('viewAny', RovaReview::class);
 
         $rova_reviews = RovaReview::paginate(10);
 
@@ -20,48 +20,48 @@ class RovaReviewController extends Controller
 
     public function create()
     {
-        $this->authorize('create', RovaReview::class);
+        // $this->authorize('create', RovaReview::class);
 
         return view('dashboard.rova_reviews.create');
     }
 
     public function store(RovaReviewRequest $request)
     {
-        $this->authorize('create', RovaReview::class);
+        // $this->authorize('create', RovaReview::class);
 
         RovaReview::create($request->validated());
 
         toast(trans('main.rova_review_created'), 'success');
 
-        return to_route('admin.rova_reviews.index');
+        return to_route('admin.rova-reviews.index');
     }
 
     public function edit(RovaReview $rova_review)
     {
-        $this->authorize('update', RovaReview::class);
+        // $this->authorize('update', RovaReview::class);
 
         return view('dashboard.rova_reviews.edit', compact('rova_review'));
     }
 
     public function update(RovaReview $rova_review, RovaReviewRequest $request)
     {
-        $this->authorize('update', RovaReview::class);
+        // $this->authorize('update', RovaReview::class);
 
         $rova_review->update($request->validated());
 
         toast(trans('main.rova_review_updated'), 'success');
 
-        return to_route('admin.rova_reviews.index');
+        return to_route('admin.rova-reviews.index');
     }
 
     public function destroy(RovaReview $rova_review)
     {
-        $this->authorize('delete', RovaReview::class);
+        // $this->authorize('delete', RovaReview::class);
 
         $rova_review->delete();
 
         toast(trans('main.rova_review_deleted'), 'success');
 
-        return to_route('admin.rova_reviews.index');
+        return to_route('admin.rova-reviews.index');
     }
 }

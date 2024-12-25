@@ -1,9 +1,9 @@
 @extends('dashboard.layout.app')
 @section('title',trans('main.create'))
-@section('main_folder', __('main.rova_products'))
+@section('main_folder', __('main.rova_review'))
 @section('sub_folder', __('main.create'))
 @section('content')
-<form action="{{route('admin.rova-products.store')}}" method="POST" enctype="multipart/form-data">
+<form action="{{route('admin.rova-reviews.store')}}" method="POST" enctype="multipart/form-data">
    @csrf
    <div class="row">
       <div class="col-lg-12 text-right d-flex justify-content-end">
@@ -16,7 +16,7 @@
             <div class="card-header">
                <div class="d-flex justify-content-between">
                   <div>
-                     <h5 class="mb-0">@lang('main.rova_product')</h5>
+                     <h5 class="mb-0">@lang('main.rova_review')</h5>
                   </div>
                </div>
             </div>
@@ -44,16 +44,16 @@
                   <div class="col-9 col-sm-9 mt-3 mt-sm-0">
                      <div class="row">
                         <div class="col-6 form-group">
-                           <label>@lang('main.name_en')</label>
-                           <input class="form-control" name="name[en]" type="text" value="{{old('name.en')}}" />
-                           @error('name.en')
+                           <label>@lang('main.comment_en')</label>
+                           <input class="form-control" name="comment[en]" type="text" value="{{old('comment.en')}}" />
+                           @error('comment.en')
                            <div class="text text-danger">{{$message}}</div>
                            @enderror
                         </div>
                         <div class="col-6 form-group">
-                           <label>@lang('main.name_ar')</label>
-                           <input class="form-control" name="name[ar]" type="text" value="{{old('name.ar')}}" />
-                           @error('name.ar')
+                           <label>@lang('main.comment_ar')</label>
+                           <input class="form-control" name="comment[ar]" type="text" value="{{old('comment.ar')}}" />
+                           @error('comment.ar')
                            <div class="text text-danger">{{$message}}</div>
                            @enderror
                         </div>

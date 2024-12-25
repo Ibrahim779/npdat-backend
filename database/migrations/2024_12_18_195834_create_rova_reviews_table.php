@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('rova_reviews', function (Blueprint $table) {
             $table->id();
+            $table->string('comment');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
