@@ -130,6 +130,12 @@
                                     <span class="sidenav-normal"> @lang('main.npdat') </span>
                                 </a>
                             </li>
+                            <li class="nav-item ">
+                                <a class="nav-link {{ request()->is('admin/pages/rova') ? 'active collapsed' : '' }}"
+                                    href="{{ route('admin.pages.rova.index') }}">
+                                    <span class="sidenav-normal"> @lang('main.rova') </span>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </li>
@@ -275,6 +281,39 @@
                     </div>
                 </li>
             @endcan
+            <li class="nav-item">
+                    <a data-bs-toggle="collapse" href="#rova"
+                        class="nav-link {{ request()->routeIs('admin.rova.*') ? 'active collapsed' : '' }}"
+                        aria-controls="web" role="button"
+                        aria-expanded="{{ request()->routeIs('admin.rova.*') ? 'true' : 'false' }}">
+                        <div
+                            class="icon icon-sm shadow border-radius-md bg-white text-center d-flex align-items-center justify-content-center  {{ app()->getLocale() == 'ar' ? 'ms-2' : 'me-2' }} {{ request()->routeIs('admin.web.*') ? 'show collapse' : '' }}">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">@lang('main.rova')</span>
+                    </a>
+                    <div class="collapse {{ request()->routeIs('admin.rova.*') ? 'show' : '' }}" id="rova"
+                        style="">
+                        <ul class="nav nav-sm flex-column ms-4 ps-3">
+                            <li class="nav-item ">
+                                <a class="nav-link {{ request()->routeIs('admin.rova.index') ? 'active collapsed' : '' }}"
+                                    href="{{ route('admin.rova-products.index') }}">
+                                    <span class="sidenav-mini-icon"> @lang('main.all') </span>
+                                    <span class="sidenav-normal"> @lang('main.rova_products') </span>
+                                </a>
+                            </li>
+                            {{-- @can('add partner') --}}
+                                <li class="nav-item ">
+                                    <a class="nav-link {{ request()->routeIs('admin.rova.create') ? 'active collapsed' : '' }}"
+                                        href="{{ route('admin.rova-products.create') }}">
+                                        <span class="sidenav-mini-icon"> @lang('main.new') </span>
+                                        <span class="sidenav-normal"> @lang('main.rova_product') </span>
+                                    </a>
+                                </li>
+                            {{-- @endcan --}}
+                        </ul>
+                    </div>
+                </li>
             <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#web"
                     class="nav-link {{ request()->routeIs('admin.web.*') ? 'active collapsed' : '' }}"

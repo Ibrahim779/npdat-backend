@@ -11,7 +11,7 @@ class RovaProductController extends Controller
 {
     public function index()
     {
-        $this->authorize('viewAny', RovaProduct::class);
+        // $this->authorize('viewAny', RovaProduct::class);
 
         $rova_products = RovaProduct::paginate(10);
 
@@ -20,48 +20,48 @@ class RovaProductController extends Controller
 
     public function create()
     {
-        $this->authorize('create', RovaProduct::class);
+        // $this->authorize('create', RovaProduct::class);
 
         return view('dashboard.rova_products.create');
     }
 
     public function store(RovaProductRequest $request)
     {
-        $this->authorize('create', RovaProduct::class);
+        // $this->authorize('create', RovaProduct::class);
 
         RovaProduct::create($request->validated());
 
         toast(trans('main.rova_product_created'), 'success');
 
-        return to_route('admin.rova_products.index');
+        return to_route('admin.rova-products.index');
     }
 
     public function edit(RovaProduct $rova_product)
     {
-        $this->authorize('update', RovaProduct::class);
+        // $this->authorize('update', RovaProduct::class);
 
         return view('dashboard.rova_products.edit', compact('rova_product'));
     }
 
     public function update(RovaProduct $rova_product, RovaProductRequest $request)
     {
-        $this->authorize('update', RovaProduct::class);
+        // $this->authorize('update', RovaProduct::class);
 
         $rova_product->update($request->validated());
 
         toast(trans('main.rova_product_updated'), 'success');
 
-        return to_route('admin.rova_products.index');
+        return to_route('admin.rova-products.index');
     }
 
     public function destroy(RovaProduct $rova_product)
     {
-        $this->authorize('delete', RovaProduct::class);
+        // $this->authorize('delete', RovaProduct::class);
 
         $rova_product->delete();
 
         toast(trans('main.rova_product_deleted'), 'success');
 
-        return to_route('admin.rova_products.index');
+        return to_route('admin.rova-products.index');
     }
 }

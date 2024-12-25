@@ -23,6 +23,7 @@ use App\Http\Controllers\Admin\AboutImageController;
 use App\Http\Controllers\Admin\Pages\HomeController;
 use App\Http\Controllers\Admin\Pages\AboutController;
 use App\Http\Controllers\Admin\Pages\NpdatController;
+use App\Http\Controllers\Admin\RovaProductController;
 
 Route::middleware('guest:admin')->group(function () {
 
@@ -81,6 +82,16 @@ Route::middleware('auth:admin')->group(function () {
          Route::post('partner-title', [AboutController::class, 'updatePartnerTitle'])->name('updatePartnerTitle');
       });
 
+      Route::prefix('rova')->name('rova.')->group(function () {
+         Route::get('/', [AboutController::class, 'index'])->name('index');
+
+         Route::post('banner', [AboutController::class, 'updateBanner'])->name('updateBanner');
+         Route::post('goals', [AboutController::class, 'updateGoals'])->name('updateGoals');
+         Route::post('icons', [AboutController::class, 'updateIcons'])->name('updateIcons');
+         Route::post('counters', [AboutController::class, 'updateCounters'])->name('updateCounters');
+         Route::post('ceo', [AboutController::class, 'updateCeo'])->name('updateCeo');
+         Route::post('partner-title', [AboutController::class, 'updatePartnerTitle'])->name('updatePartnerTitle');
+      });
       Route::prefix('npdat')->name('npdat.')->group(function () {
          Route::get('/', [NpdatController::class, 'index'])->name('index');
    
@@ -110,6 +121,8 @@ Route::middleware('auth:admin')->group(function () {
    Route::resource('aboutImages', AboutImageController::class)->except('show');
 
    Route::resource('weOffers', WeOfferController::class)->except('show');
+
+   Route::resource('rova-products',RovaProductController::class)->except('show');
 
    Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 });

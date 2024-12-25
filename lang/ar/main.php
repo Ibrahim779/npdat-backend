@@ -296,7 +296,7 @@ return [
     'partner_created' => 'تم انشاء الشريك بنجاح',
     'partner_updated' => 'تم تعديل الشريك بنجاح',
     'partner_deleted' => 'تم حذف الشريك بنجاح',
-    'no_partners' => 'لا يوجد شركاء لاظهارهم',  
+    'no_partners' => 'لا يوجد شركاء لاظهارهم',
     'new_partner' => 'شريك جديد',
 
     'services' => 'الخدمات',
@@ -315,6 +315,7 @@ return [
     'no_about_images' => 'لا يوجد صور من نحن لاظهارها',
     'new_about_image' => 'صورة من نحن جديدة',
 
+    'rova' => 'روفا',
     'rova_products' => 'منتجات روفا',
     'rova_product' => 'منتج روفا',
     'rova_product_created' => 'تم انشاء منتج روفا',
@@ -323,6 +324,7 @@ return [
     'no_rova_products' => 'لا يوجد منتجات روفا لاظهارها',
     'new_rova_product' => 'منتج روفا جديد',
 
+
     'rova_reviews' => 'تقيمات روفا',
     'rova_review' => 'تقيم روفا',
     'rova_review_created' => 'تم انشاء تقيم روفا',
@@ -330,6 +332,8 @@ return [
     'rova_review_deleted' => 'تم حذف تقيم روفا',
     'no_rova_reviews' => 'لا يوجد تقيمات روفا لاظهارها',
     'new_rova_review' => 'تقيم روفا جديد',
+
+    'image' => 'صورة',
 
     'quotes' => 'اقتباسات',
     'quote' => 'اقتباس',

@@ -276,7 +276,7 @@ return [
     'add' => 'Add',
 
     'home' => 'Home',
-    
+
     'banner_section' => 'Banner Section',
     'npdat_section' => 'Npdat Section',
     'rova_section' => 'Rova Section',
@@ -315,6 +315,7 @@ return [
     'about_image_created' => 'About Image has been created successfully',
     'new_about_image' => 'New About Image',
 
+    'rova' => 'Rova',
     'rova_products' => 'Rova Products',
     'rova_product' => 'Rova Product',
     'rova_product_updated' => 'Rova Product has been updated successfully',
@@ -322,7 +323,17 @@ return [
     'no_rova_products' => 'There is no rova products to be shown',
     'rova_product_created' => 'Rova Product has been created successfully',
     'new_rova_product' => 'New Rova Product',
+    'rova' => 'Rova',
+    'rova-products' => 'Rova Products',
+    'rova-product' => 'Rova Product',
+    'rova-product_updated' => 'Rova Product has been updated successfully',
+    'rova-product_deleted' => 'Rova Product has been deleted successfully',
+    'no_rova-products' => 'There is no rova products to be shown',
+    'rova_product-created' => 'Rova Product has been created successfully',
+    'new_rova-product' => 'New Rova Product',
 
+    'imgaes' => 'Images',
+    'image' => 'Image',
     'rova_reviews' => 'Rova Reviews',
     'rova_review' => 'Rova Review',
     'rova_review_updated' => 'Rova Review has been updated successfully',

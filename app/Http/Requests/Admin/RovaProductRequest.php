@@ -24,8 +24,9 @@ class RovaProductRequest extends FormRequest
      */
     public function rules()
     {
+        // dd($this);
         return [
-            'image' => ['mimes:jpeg,jpg,png|max:5000', Rule::requiredIf($this->method() == 'POST')],
+            'image' => ['mimes:jpeg,jpg,png', Rule::requiredIf($this->method() == 'POST')],
             'name.*' => 'required|string|min:3|max:50',
         ];
     }
