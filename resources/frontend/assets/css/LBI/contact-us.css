@@ -1,0 +1,22 @@
+@import url("./navbar.css");
+
+#form h6.ld-fh-element {
+  color: #caa35c;
+}
+
+#form .contact-us-btn {
+  color: #fff;
+  background: #caa35c;
+}
+
+#form .contact-us-btn:hover {
+  background: #101f2e;
+}
+
+#global-offices .global-item:hover {
+  background: #caa35c;
+}
+
+.text-right {
+  text-align: right;
+}

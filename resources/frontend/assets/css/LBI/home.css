@@ -1,0 +1,71 @@
+@import url("./navbar.css");
+
+.banner-home .ld-fancy-heading p {
+  color: #fff !important;
+}
+
+.banner-home .banner-btn {
+  background: #101f2e !important;
+}
+
+.banner-home .banner-phone {
+  color: #caa35c;
+}
+
+.ld-flipbox-back .ld-flipbox-overlay.lqd-overlay {
+  background: #101f2e;
+  color: #fff;
+}
+
+.ld-flipbox-back .send-message:hover {
+  background: #caa35c;
+  color: #fff;
+}
+
+.mobile-section {
+  background: #101f2e;
+}
+
+.cosmetics h6 {
+  color: #caa35c;
+}
+
+.cosmetics h2 {
+  color: #101f2e;
+}
+
+.cosmetics2 {
+  background: #caa35c0e;
+}
+
+.cosmetics2 h6 {
+  color: #101f2e;
+}
+
+.cosmetics2 h2 {
+  color: #caa35c;
+}
+
+.cosmetics2 .cosmetics2-btn {
+  background: #101f2e;
+  color: #fff;
+}
+
+.cosmetics2 .cosmetics2-btn:hover {
+  background: #caa35c;
+}
+
+.lqd-cf-form-control.send-email {
+  background: #caa35c;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@media screen and (max-width: 1200px) {
+  .roova-section .roova-content,
+  .real-estate-section .real-estate-section {
+    gap: 40px;
+  }
+}

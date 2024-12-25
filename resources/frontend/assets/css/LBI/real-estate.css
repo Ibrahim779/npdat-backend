@@ -1,0 +1,19 @@
+@import url("./navbar.css");
+
+.accordion-item.active .accordion-heading a {
+  background: #101f2e !important;
+}
+
+#service-plans .iconbox:hover .iconbox-icon-container > span {
+  background: #caa35c !important;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@media screen and (max-width: 1200px) {
+  .real-estate-about .real-estate-content {
+    gap: 40px;
+  }
+}

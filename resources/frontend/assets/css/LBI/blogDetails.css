@@ -1,0 +1,23 @@
+@import url("./navbar.css");
+
+/* Blog Content Section */
+.blog-content {
+  padding: 40px 0;
+}
+
+.blog-image {
+  width: 100%;
+  border-radius: 12px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.text-right {
+  text-align: right;
+}

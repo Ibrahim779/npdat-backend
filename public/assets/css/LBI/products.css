@@ -1,0 +1,31 @@
+@import url("./navbar.css");
+
+.solutions1 mark .lqd-highlight-inner {
+  background-color: #caa35c4f;
+}
+
+.solutions1 .btn-solid {
+  background: #101f2e;
+  color: #fff;
+}
+
+.solutions1 .btn-solid:hover {
+  background: #caa35c;
+}
+
+.solutions2 mark .lqd-highlight-inner {
+  background-color: #101f2e35;
+}
+
+.solutions2 .btn-solid {
+  background: #caa35c;
+  color: #fff;
+}
+
+.solutions2 .btn-solid:hover {
+  background: #101f2e;
+}
+
+.text-right {
+  text-align: right;
+}

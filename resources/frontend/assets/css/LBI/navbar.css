@@ -1,0 +1,14 @@
+#site-header .btn-get-touch {
+  background: #caa35c !important;
+}
+/* 
+.lqd-head-sec {
+  margin: 0 3vw !important;
+} */
+.lqd-head-sec > div {
+  padding: 0;
+}
+
+.text-right {
+  text-align: right;
+}

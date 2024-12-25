@@ -1,0 +1,14 @@
+@import url("./navbar.css");
+.btn-details {
+  border-color: #caa35c;
+  color: #caa35c;
+}
+
+.btn-details:hover {
+  background-color: #caa35c !important;
+  color: #ffffff;
+}
+
+.text-right {
+  text-align: right;
+}

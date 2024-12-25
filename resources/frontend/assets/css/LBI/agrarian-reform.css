@@ -1,0 +1,72 @@
+@import url("./navbar.css");
+
+#banner mark.lqd-highlight span.lqd-highlight-inner {
+  background: #101f2e;
+}
+
+#banner h6.ld-fh-element {
+  color: #caa35c;
+}
+
+#banner .btn-banner {
+  background: #caa35c;
+}
+
+#banner .btn-banner:hover {
+  background: #101f2e;
+}
+
+#banner .banner-phone {
+  color: #caa35c;
+}
+
+#what-we-do .what-we-do-content .iconbox-icon-container {
+  border-color: #caa35c;
+}
+#what-we-do .what-we-do-content .iconbox-icon-container i {
+  color: #caa35c;
+}
+
+#what-we-do .what-we-do-btn {
+  background: #101f2e;
+}
+
+#what-we-do .what-we-do-btn:hover {
+  background: #caa35c;
+}
+
+#what-we-do .what-we-do-phone span {
+  color: #caa35c;
+}
+
+#accordion h6 {
+  color: #caa35c;
+}
+
+#accordion .btn-txt:hover {
+  color: #caa35c;
+}
+
+#pricing .btn-price {
+  border-color: #caa35c;
+  color: #caa35c;
+}
+#pricing .btn-price-main {
+  border-color: #caa35c;
+  background-color: #caa35c;
+  color: #fff;
+}
+
+#pricing .btn-price:hover {
+  background-color: #101f2e;
+  border-color: #101f2e !important;
+  color: #fff;
+}
+
+#contact-image .btn:hover {
+  background: #caa35c;
+}
+
+.text-right {
+  text-align: right;
+}

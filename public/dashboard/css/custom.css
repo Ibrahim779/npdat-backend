@@ -1,0 +1,11 @@
+.float-left{
+    float: left;
+}
+
+.dashed-border-table .table,.dashed-border-table tr, .dashed-border td,  .dashed-border th , .dashed-border tbody, .dashed-border thead{
+    /*border: 2px dashed #3c8dbc!important;*/
+
+}
+.table > :not(:first-child) {
+    /*border-top: 2px dashed #3c8dbc!important;*/
+}

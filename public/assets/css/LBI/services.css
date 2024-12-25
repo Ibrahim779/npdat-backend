@@ -1,0 +1,9 @@
+@import url("./navbar.css");
+
+.service-card h6.ld-fh-element {
+  color: #caa35c !important;
+}
+
+.text-right {
+  text-align: right;
+}
