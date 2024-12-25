@@ -23,6 +23,7 @@ use App\Http\Controllers\Admin\AboutImageController;
 use App\Http\Controllers\Admin\Pages\HomeController;
 use App\Http\Controllers\Admin\Pages\AboutController;
 use App\Http\Controllers\Admin\Pages\NpdatController;
+use App\Http\Controllers\Admin\Pages\RovaController;
 use App\Http\Controllers\Admin\RovaProductController;
 use App\Http\Controllers\Admin\RovaReviewController;
 use App\Models\RovaReview;
@@ -85,14 +86,12 @@ Route::middleware('auth:admin')->group(function () {
       });
 
       Route::prefix('rova')->name('rova.')->group(function () {
-         Route::get('/', [AboutController::class, 'index'])->name('index');
+         Route::get('/', [RovaController::class, 'index'])->name('index');
 
-         Route::post('banner', [AboutController::class, 'updateBanner'])->name('updateBanner');
-         Route::post('goals', [AboutController::class, 'updateGoals'])->name('updateGoals');
-         Route::post('icons', [AboutController::class, 'updateIcons'])->name('updateIcons');
-         Route::post('counters', [AboutController::class, 'updateCounters'])->name('updateCounters');
-         Route::post('ceo', [AboutController::class, 'updateCeo'])->name('updateCeo');
-         Route::post('partner-title', [AboutController::class, 'updatePartnerTitle'])->name('updatePartnerTitle');
+         Route::post('banner', [RovaController::class, 'updateBanner'])->name('updateBanner');
+         Route::post('goals', [RovaController::class, 'updateGoals'])->name('updateGoals');
+         Route::post('firstsections', [RovaController::class, 'updateFirstSection'])->name('updateFirstSection');
+         Route::post('products', [RovaController::class, 'updateProducts'])->name('updateProducts');
       });
       Route::prefix('npdat')->name('npdat.')->group(function () {
          Route::get('/', [NpdatController::class, 'index'])->name('index');
