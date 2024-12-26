@@ -5,7 +5,7 @@ namespace App\Http\Requests\Admin;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
 
-class RovaProductRequest extends FormRequest
+class RovaImageRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,9 +24,9 @@ class RovaProductRequest extends FormRequest
      */
     public function rules()
     {
+        // dd($this);
         return [
             'image' => ['mimes:jpeg,jpg,png', Rule::requiredIf($this->method() == 'POST')],
-            'name.*' => 'required|string|min:3|max:50',
         ];
     }
 }

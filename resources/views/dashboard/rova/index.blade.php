@@ -4,10 +4,11 @@
 @section('sub_folder', __('main.pages'))
 @section('content')
 <div class="row mb-5">
-  {{-- @include('dashboard.about.components.fixed') --}}
   <div class="col-lg-9 mt-lg-0">
-    @include('dashboard.rova.components.banner')
+    @include('dashboard.rova.components.first_section')
     @include('dashboard.rova.components.goals')
+    @include('dashboard.rova.components.banner')
+    @include('dashboard.rova.components.products')
 
   </div>
 </div>

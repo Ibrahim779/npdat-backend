@@ -77,7 +77,7 @@ class RovaPage extends Settings
 
     public function getBannerImage()
     {
-        return $this->banner_image ? asset('storage/' . $this->banner_image) : asset('assets/images/brand/brand-img.jpeg');
+        return $this->banner_image ? asset('storage/' . $this->banner_image) : asset('assets/images/brand/brand-bg.jpeg');
     }
 
     public function getProductsTitle()

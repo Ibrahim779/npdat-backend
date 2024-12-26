@@ -30,14 +30,14 @@
          data-split-text="true"
          data-split-options='{"type":"lines"}'
        >
-         جمالك كما يجب أن يكون
+       {{ $rovaSetting->getFirstSectionTitle() }}
        </h1>
        <p
          class="ld-fh-element realtive mb-1/75em lqd-split-lines text-20 leading-35"
          data-split-text="true"
          data-split-options='{"type":"lines"}'
        >
-         منتجات روفا تمنحك التألق الذي يعكس ثقتك بنفسك
+       {{ $rovaSetting->getFirstSectionDescription() }}
        </p>
        <a
          href="https://linktr.ee/roovacosmetics?utm_source=linktree_profile_share&ltsid=0fc4428e-a838-4468-8de1-51ff66501c35"
@@ -70,7 +70,7 @@
                  <img
                    width="650"
                    height="483"
-                   src="./assets/images/brand/brand-img.jpeg"
+                   src="{{ $rovaSetting->getFirstSectionImage() }}"
                    alt="banner"
                    class="rounded-full"
                  />

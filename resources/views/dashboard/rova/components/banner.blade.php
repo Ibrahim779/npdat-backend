@@ -1,4 +1,4 @@
-<div class="card" id="banner_section">
+<div class="card mt-4" id="banner_section">
    <div class="card-header">
       <h5>@lang('main.banner_section')</h5>
    </div>

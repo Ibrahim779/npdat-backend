@@ -1,7 +1,7 @@
 @extends('dashboard.layout.app')
-@section('title', trans('main.rova_products'))
+@section('title', trans('main.rova_reviews'))
 @section('main_folder', __('main.web'))
-@section('sub_folder', __('main.rova_products'))
+@section('sub_folder', __('main.rova_reviews'))
 @section('content')
     <div class="row">
         <div class="col-12">
@@ -10,10 +10,10 @@
                 <div class="card-header">
                     <div class="d-flex justify-between">
                         <div>
-                            <h5 class="mb-0">@lang('main.rova_products')</h5>
+                            <h5 class="mb-0">@lang('main.rova_reviews')</h5>
                         </div>
                         <div class="my-auto mt-lg-0 mt-4">
-                            @can('add product')
+                            @can('add rovareview')
                                 <a href="{{ route('admin.rova-products.create') }}" class="btn btn-primary btn-sm mb-0">+&nbsp;
                                     @lang('main.new_product')</a>
                             @endcan

@@ -2,7 +2,7 @@
  <section
  class="lqd-section image-bg pt-120 pb-140 bg-no-rapeat bg-center bg-cover transition-all"
  style="
-   background-image: url(./assets/images/brand/brand-bg.jpeg);
+   background-image: url({{ $rovaSetting->getBannerImage() }});
    height: 550px;
  "
 >
@@ -18,20 +18,3 @@
  ></div>
 </section>
 <!-- End Image BG -->
-<!-- Start Carousel Text LG -->
-<section
- class="lqd-section carousel-text-lg bg-white transition-all"
- id="carousel-text"
->
- <div
-   class="ld-particles-container w-full lqd-particles-as-bg lqd-overlay flex"
- >
-   <div
-     class="ld-particles-inner lqd-overlay flex pointer-events-none"
-     id="lqd-particle-text-carousel"
-     data-particles="true"
-     data-particles-options='{"particles": {"number": {"value" : 4} , "color": {"value" : ["#604CFD", "#FDA44C", "#0FBBB4", "#F85976"]} , "shape": {"type" : ["circle"]} , "opacity": {"value" : 1} , "size": {"value" : 4, "random": true} , "move": {"enable": true, "direction": "none", "random": true, "out_mode": "out"}} , "interactivity" : [], "retina_detect": true}'
-   ></div>
- </div>
-</section>
-<!-- End Carousel Text LG -->

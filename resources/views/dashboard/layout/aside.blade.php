@@ -327,6 +327,22 @@
                                     </a>
                                 </li>
                             @endcan
+                             <li class="nav-item ">
+                                <a class="nav-link {{ request()->routeIs('admin.rova.index') ? 'active collapsed' : '' }}"
+                                    href="{{ route('admin.rova-images.index') }}">
+                                    <span class="sidenav-mini-icon"> @lang('main.all') </span>
+                                    <span class="sidenav-normal"> @lang('main.rova_images') </span>
+                                </a>
+                            </li>
+                            @can('add rovaimage')
+                                <li class="nav-item ">
+                                    <a class="nav-link {{ request()->routeIs('admin.rova.create') ? 'active collapsed' : '' }}"
+                                        href="{{ route('admin.rova-images.create') }}">
+                                        <span class="sidenav-mini-icon"> @lang('main.new') </span>
+                                        <span class="sidenav-normal"> @lang('main.new') @lang('main.rova_images') </span>
+                                    </a>
+                                </li>
+                            @endcan
                         </ul>
                     </div>
                 </li>
