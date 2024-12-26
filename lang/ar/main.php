@@ -263,8 +263,22 @@ return [
     'comment_en' => 'التعليق بالانجليزية',
     'comment_ar' => 'التعليق بالعربية',
     "comment" => "التعليق",
-    
 
+    "rova_images" => "صور روفا",
+    "rova_image" => "صورة روفا",
+
+    "new_image" => "صورة جديدة",
+    "first_section" => "القسم الأول",
+    "goals_section" => "قسم الاهداف",
+    "goals_list_item_en" => "عنصر قائمة الاهداف بالانجليزية",
+    "goals_list_item_ar" => "عنصر قائمة الاهداف بالعربية",
+    "goals_list_item" => "عنصر قائمة الاهداف",
+    "goals_list_item1_en" => "عنصر قائمة الاهداف 1 بالانجليزية",
+    "goals_list_item1_ar" => "عنصر قائمة الاهداف 1 بالعربية",
+    "products" => "المنتجات",
+    "new_product" => "منتج جديد",
+    "new_review" => "تقييم جديد",
+    
     //Models 
     'admin' => 'المديرون',
     'contact' => 'رسائل العملاء',

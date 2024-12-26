@@ -43,4 +43,6 @@ return [
 
    'other_articles' => 'مقالات أخرى',
    'related_words' => 'كلمات ذات صلة',
+
+   'rova' => 'رووفا'
 ];

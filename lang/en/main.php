@@ -364,4 +364,21 @@ return [
     'comment' => 'Comment',
     'comment_en' => 'Comment EN',
     'comment_ar' => 'Comment AR',
+
+
+    "rova_images" => "Rova Images",
+    "rova_image" => "Rova Image",
+    
+    "new_image" => " New Image",
+    "first_section" => "First Section",
+    "goals_section" => "Goals Section",
+    "goals_list_item_en" => "Goals List Item EN",
+    "goals_list_item_ar" => "Goals List Item AR",
+    "goals_list_item" => "Goals List Item",
+    "goals_list_item1_en" => "Goals List Item 1 EN",
+    "goals_list_item1_ar" => "Goals List Item 1 AR",
+    "products" => "Products",
+    "new_product" => "New Product",
+    "new_review" => "New Review",
+
 ];

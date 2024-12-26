@@ -15,7 +15,7 @@
                         <div class="my-auto mt-lg-0 mt-4">
                             @can('add rovareview')
                                 <a href="{{ route('admin.rova-products.create') }}" class="btn btn-primary btn-sm mb-0">+&nbsp;
-                                    @lang('main.new_product')</a>
+                                    @lang('main.new_review')</a>
                             @endcan
                         </div>
                     </div>

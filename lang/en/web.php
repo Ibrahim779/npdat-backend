@@ -45,7 +45,6 @@ return [
    'other_articles' => 'Other Articles',
    'related_words' => 'Related Words',
 
-   'name' => 'Name',
-
+   'rova' => 'Rova',
 
 ];
